@@ -26,6 +26,13 @@ exp(6)/log(156)
 nomes<- c("Numiá", "Letíca", "Débora")
 idades<- c(26, 25, 28)
 
+# Por se tratar de uma variável numérica intervalar, é legal declararmos como "integer".
+# Tem dois jeitos de fazer. Depois do vetor idades pronto podemos mudar a class
+idades <- as.integer(idades)
+
+# Ou declarar os números como inteiros usando o operador L
+idades<- c(26L, 25L, 28L)
+
 #Exercícios número 3
 class(nomes)
 class(idades)
